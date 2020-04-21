@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+    <div class="row">
+         <div class="col-md-8 card mb-4 mt-3 left top">
+             <div class="card-body">
+                 <h1>About</h1>
+                 <!--article that gives some background about myself-->
+                 <p>This is a simple blog starter about page built with Django. </p>
+             </div>
+         </div>
+        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    </div>
+</div>
+{% endblock content %}
